@@ -1,6 +1,6 @@
 // components/Hero.jsx - Hero Section Component
 import React from "react";
-import { ArrowRight, Play } from "lucide-react";
+import { ArrowRight } from "lucide-react";
 
 const Hero = () => {
   return (
@@ -30,10 +30,9 @@ const Hero = () => {
       {/* Content */}
       <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
         <div className="flex flex-col items-center space-y-10">
+
           {/* Badge */}
-          <span className="px-5 py-2 bg-neon-blue/20 text-neon-blue rounded-full text-sm font-semibold">
-            #1 Marketing Agency 2024
-          </span>
+       
 
           {/* MAIN HEADING */}
           <h1 className="text-5xl md:text-6xl lg:text-7xl font-extrabold tracking-tight">
@@ -48,33 +47,23 @@ const Hero = () => {
             strategies, creative campaigns, and measurable growth.
           </p>
 
-          {/* CTA Buttons */}
+          {/* CTA Button */}
           <div className="flex flex-col sm:flex-row gap-5">
             <button className="btn-primary flex items-center gap-2">
               Get Started
               <ArrowRight size={20} />
             </button>
-
-          
           </div>
 
           {/* Stats */}
           <div className="grid grid-cols-1 sm:grid-cols-3 gap-10 pt-12">
-            <div>
-              <h3 className="text-4xl font-bold text-neon-blue">500+</h3>
-              <p className="text-gray-400 mt-2">Projects Completed</p>
-            </div>
+          
 
-            <div>
-              <h3 className="text-4xl font-bold text-purple-400">98%</h3>
-              <p className="text-gray-400 mt-2">Client Satisfaction</p>
-            </div>
+          
 
-            <div>
-              <h3 className="text-4xl font-bold text-green-400">250+</h3>
-              <p className="text-gray-400 mt-2">Happy Clients</p>
-            </div>
+          
           </div>
+
         </div>
       </div>
 
