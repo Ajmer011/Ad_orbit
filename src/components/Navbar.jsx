@@ -19,7 +19,7 @@ const Navbar = () => {
   const navItems = [
     { name: 'Home', href: '#hero' },
     { name: 'Services', href: '#services' },
-    { name: 'Why Us', href: '#why-choose-us' },
+    { name: 'Advantages', href: '#why-choose-us' },
     { name: 'Portfolio', href: '#portfolio' },
     { name: 'Pricing', href: '#pricing' },
     { name: 'Contact', href: '#contact' },
@@ -47,9 +47,11 @@ const Navbar = () => {
         <div className="flex justify-between items-center h-20">
           {/* Logo */}
           <div className="flex-shrink-0">
-            <a href="#hero" className="text-2xl font-bold text-gradient">
-              MarketPro
-            </a>
+            <img
+      className="h-10 w-auto object-contain"
+      src="/ADORBIT_LOGO-8.png"
+      alt="AdOrbit Logo"
+    />
           </div>
 
           {/* Desktop Navigation */}
@@ -64,9 +66,12 @@ const Navbar = () => {
                 {item.name}
               </a>
             ))}
-            <button className="btn-primary">
-              Get Started
-            </button>
+        {/* <button className="group w-full mt-4 px-4 py-2 bg-white text-dark-900 font-bold rounded-lg hover:bg-gradient-to-r hover:from-neon-blue hover:to-neon-purple hover:text-white transition-all duration-500 shadow-xl hover:shadow-2xl hover:scale-105 flex items-center justify-center gap-2">
+  Start Connecting
+  <svg className="w-2 h-2 group-hover:translate-x-2 transition-transform duration-300" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M17 8l4 4m0 0l-4 4m4-4H3" />
+  </svg>
+</button> */}
           </div>
 
           {/* Mobile Menu Button */}
@@ -95,9 +100,7 @@ const Navbar = () => {
                 {item.name}
               </a>
             ))}
-            <button className="w-full mt-4 btn-primary">
-              Get Started
-            </button>
+            
           </div>
         </div>
       )}
