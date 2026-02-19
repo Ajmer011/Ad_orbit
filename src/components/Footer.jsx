@@ -132,7 +132,7 @@ const Footer = () => {
             
             {/* Copyright */}
             <p className="text-gray-400 text-sm">
-              © {currentYear} MarketPro. All rights reserved.
+              © {currentYear} Adorbit. All rights reserved.
             </p>
 
             {/* Social Links */}
