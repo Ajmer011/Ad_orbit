@@ -1,6 +1,6 @@
 // components/Portfolio.jsx - Ultra-Premium Portfolio/Featured Work Section
 import React, { useState, useRef } from 'react';
-import { ExternalLink, X, Sparkles, Award } from 'lucide-react';
+import { ExternalLink, X, Award } from 'lucide-react'; // ❌ Sparkles removed
 
 const Portfolio = () => {
   const [selectedProject, setSelectedProject] = useState(null);
@@ -76,6 +76,8 @@ const Portfolio = () => {
   ];
 
   return (
+    // ⚡ Yahan se neeche ka pura code SAME rahega (unchanged)
+
     <section id="portfolio" className="relative py-32 bg-[#0a0a0a] overflow-hidden">
       {/* Google Fonts */}
       <style>{`
