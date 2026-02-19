@@ -7,10 +7,10 @@ const Footer = () => {
 
   const footerLinks = {
     company: [
-      { name: 'About Us', href: '#' },
-      { name: 'Careers', href: '#' },
-      { name: 'Blog', href: '#' },
-      { name: 'Press', href: '#' },
+      { name: 'About Us', href: '/' },
+      { name: 'Careers', href: '/' },
+      { name: 'Blog', href: '/' },
+      { name: 'Press', href: '/' },
     ],
     services: [
       { name: 'SEO', href: '#services' },
@@ -19,26 +19,28 @@ const Footer = () => {
       { name: 'Content', href: '#services' },
     ],
     support: [
-      { name: 'Help Center', href: '#' },
+      { name: 'Help Center', href: '/' },
       { name: 'Contact', href: '#contact' },
-      { name: 'Privacy Policy', href: '#' },
-      { name: 'Terms of Service', href: '#' },
+      { name: 'Privacy Policy', href: '/' },
+      { name: 'Terms of Service', href: '/' },
     ],
   };
 
   const socialLinks = [
-    { Icon: Facebook, href: '#', label: 'Facebook' },
-    { Icon: Twitter, href: '#', label: 'Twitter' },
-    { Icon: Instagram, href: '#', label: 'Instagram' },
-    { Icon: Linkedin, href: '#', label: 'LinkedIn' },
-    { Icon: Youtube, href: '#', label: 'YouTube' },
+    { Icon: Facebook, href: '/', label: 'Facebook' },
+    { Icon: Twitter, href: '/', label: 'Twitter' },
+    { Icon: Instagram, href: '/', label: 'Instagram' },
+    { Icon: Linkedin, href: '/', label: 'LinkedIn' },
+    { Icon: Youtube, href: '/', label: 'YouTube' },
   ];
 
   return (
     <footer className="bg-dark-800 border-t border-gray-800">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        
         {/* Main Footer Content */}
         <div className="py-12 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 gap-8">
+          
           {/* Company Info */}
           <div className="lg:col-span-2">
             <a href="#hero" className="text-3xl font-bold text-gradient mb-4 inline-block">
@@ -53,19 +55,21 @@ const Footer = () => {
             <div className="space-y-3">
               <div className="flex items-center gap-3 text-gray-400">
                 <Mail size={18} className="text-neon-blue" />
-                <a href="mailto:hello@marketpro.com" className="hover:text-neon-blue transition-colors">
+                <a href="mailto:adorbit.org@gmail.com" className="hover:text-neon-blue transition-colors">
                   adorbit.org@gmail.com
                 </a>
               </div>
+
               <div className="flex items-center gap-3 text-gray-400">
                 <Phone size={18} className="text-neon-blue" />
-                <a href="tel:+11234567890" className="hover:text-neon-blue transition-colors">
-                 +91 9516991004
+                <a href="tel:+919516991004" className="hover:text-neon-blue transition-colors">
+                  +91 9516991004
                 </a>
               </div>
+
               <div className="flex items-center gap-3 text-gray-400">
                 <MapPin size={18} className="text-neon-blue" />
-                <span>Bhopal , Madhya Pradesh</span>
+                <span>Bhopal, Madhya Pradesh</span>
               </div>
             </div>
           </div>
@@ -125,6 +129,7 @@ const Footer = () => {
         {/* Bottom Footer */}
         <div className="border-t border-gray-700 py-8">
           <div className="flex flex-col md:flex-row justify-between items-center gap-4">
+            
             {/* Copyright */}
             <p className="text-gray-400 text-sm">
               © {currentYear} MarketPro. All rights reserved.
@@ -146,13 +151,13 @@ const Footer = () => {
 
             {/* Legal Links */}
             <div className="flex gap-6 text-sm text-gray-400">
-              <a href="#" className="hover:text-neon-blue transition-colors">
+              <a href="/" className="hover:text-neon-blue transition-colors">
                 Privacy Policy
               </a>
-              <a href="#" className="hover:text-neon-blue transition-colors">
+              <a href="/" className="hover:text-neon-blue transition-colors">
                 Terms
               </a>
-              <a href="#" className="hover:text-neon-blue transition-colors">
+              <a href="/" className="hover:text-neon-blue transition-colors">
                 Cookies
               </a>
             </div>
@@ -160,7 +165,7 @@ const Footer = () => {
         </div>
       </div>
 
-      {/* Scroll to Top Button (Optional) */}
+      {/* Scroll to Top Button */}
       <button
         onClick={() => window.scrollTo({ top: 0, behavior: 'smooth' })}
         className="fixed bottom-8 right-8 w-12 h-12 bg-gradient-primary rounded-full flex items-center justify-center shadow-neon hover:shadow-neon-hover transition-all duration-300 z-40"
