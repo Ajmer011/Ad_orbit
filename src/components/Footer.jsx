@@ -7,10 +7,10 @@ const Footer = () => {
 
   const footerLinks = {
     company: [
-      { name: 'About Us', href: '/about' },
-      { name: 'Careers', href: '/careers' },
-      { name: 'Blog', href: '/blog' },
-      { name: 'Press', href: '/press' },
+      { name: 'About Us', href: '#' },
+      { name: 'Careers', href: '#' },
+      { name: 'Blog', href: '#' },
+      { name: 'Press', href: '#' },
     ],
     services: [
       { name: 'SEO', href: '#services' },
@@ -19,98 +19,123 @@ const Footer = () => {
       { name: 'Content', href: '#services' },
     ],
     support: [
-      { name: 'Help Center', href: '/help' },
+      { name: 'Help Center', href: '#' },
       { name: 'Contact', href: '#contact' },
-      { name: 'Privacy Policy', href: '/privacy' },
-      { name: 'Terms of Service', href: '/terms' },
+      { name: 'Privacy Policy', href: '#' },
+      { name: 'Terms of Service', href: '#' },
     ],
   };
 
   const socialLinks = [
-    { Icon: Facebook, href: 'https://example.com', label: 'Facebook' },
-    { Icon: Twitter, href: 'https://example.com', label: 'Twitter' },
-    { Icon: Instagram, href: 'https://example.com', label: 'Instagram' },
-    { Icon: Linkedin, href: 'https://example.com', label: 'LinkedIn' },
-    { Icon: Youtube, href: 'https://example.com', label: 'YouTube' },
+    { Icon: Facebook, href: '#', label: 'Facebook' },
+    { Icon: Twitter, href: '#', label: 'Twitter' },
+    { Icon: Instagram, href: '#', label: 'Instagram' },
+    { Icon: Linkedin, href: '#', label: 'LinkedIn' },
+    { Icon: Youtube, href: '#', label: 'YouTube' },
   ];
 
   return (
     <footer className="bg-dark-800 border-t border-gray-800">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-
+        {/* Main Footer Content */}
         <div className="py-12 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 gap-8">
-
           {/* Company Info */}
           <div className="lg:col-span-2">
-            <a href="/" className="text-3xl font-bold text-gradient mb-4 inline-block">
+            <a href="#hero" className="text-3xl font-bold text-gradient mb-4 inline-block">
               Adorbit
             </a>
-
             <p className="text-gray-400 mb-6 max-w-md">
-              Transform your brand with data-driven marketing strategies that deliver real results.
+              Transform your brand with data-driven marketing strategies that deliver real results. 
               We're your partner in digital success.
             </p>
 
+            {/* Contact Info */}
             <div className="space-y-3">
               <div className="flex items-center gap-3 text-gray-400">
                 <Mail size={18} className="text-neon-blue" />
                 <a href="mailto:hello@marketpro.com" className="hover:text-neon-blue transition-colors">
-                adorbit.org@gmail.com
+                  adorbit.org@gmail.com
                 </a>
               </div>
-
               <div className="flex items-center gap-3 text-gray-400">
                 <Phone size={18} className="text-neon-blue" />
                 <a href="tel:+11234567890" className="hover:text-neon-blue transition-colors">
-                  +91 9516991004
+                 +91 9516991004
                 </a>
               </div>
-
               <div className="flex items-center gap-3 text-gray-400">
                 <MapPin size={18} className="text-neon-blue" />
-                <span>Ashoka Garden , Bhopal </span>
+                <span>Bhopal , Madhya Pradesh</span>
               </div>
             </div>
           </div>
 
-          {/* Dynamic Sections */}
-          {Object.entries(footerLinks).map(([section, links]) => (
-            <div key={section}>
-              <h3 className="text-white font-semibold mb-4 capitalize">
-                {section}
-              </h3>
-              <ul className="space-y-3">
-                {links.map((link) => (
-                  <li key={link.name}>
-                    <a
-                      href={link.href}
-                      className="text-gray-400 hover:text-neon-blue transition-colors"
-                    >
-                      {link.name}
-                    </a>
-                  </li>
-                ))}
-              </ul>
-            </div>
-          ))}
+          {/* Company Links */}
+          <div>
+            <h3 className="text-white font-semibold mb-4">Company</h3>
+            <ul className="space-y-3">
+              {footerLinks.company.map((link) => (
+                <li key={link.name}>
+                  <a
+                    href={link.href}
+                    className="text-gray-400 hover:text-neon-blue transition-colors"
+                  >
+                    {link.name}
+                  </a>
+                </li>
+              ))}
+            </ul>
+          </div>
 
+          {/* Services Links */}
+          <div>
+            <h3 className="text-white font-semibold mb-4">Services</h3>
+            <ul className="space-y-3">
+              {footerLinks.services.map((link) => (
+                <li key={link.name}>
+                  <a
+                    href={link.href}
+                    className="text-gray-400 hover:text-neon-blue transition-colors"
+                  >
+                    {link.name}
+                  </a>
+                </li>
+              ))}
+            </ul>
+          </div>
+
+          {/* Support Links */}
+          <div>
+            <h3 className="text-white font-semibold mb-4">Support</h3>
+            <ul className="space-y-3">
+              {footerLinks.support.map((link) => (
+                <li key={link.name}>
+                  <a
+                    href={link.href}
+                    className="text-gray-400 hover:text-neon-blue transition-colors"
+                  >
+                    {link.name}
+                  </a>
+                </li>
+              ))}
+            </ul>
+          </div>
         </div>
 
         {/* Bottom Footer */}
         <div className="border-t border-gray-700 py-8">
           <div className="flex flex-col md:flex-row justify-between items-center gap-4">
-
+            {/* Copyright */}
             <p className="text-gray-400 text-sm">
-              © {currentYear} Adorbit. All rights reserved.
+              © {currentYear} MarketPro. All rights reserved.
             </p>
 
+            {/* Social Links */}
             <div className="flex gap-4">
               {socialLinks.map(({ Icon, href, label }) => (
                 <a
                   key={label}
                   href={href}
-                  target="_blank"
-                  rel="noopener noreferrer"
                   aria-label={label}
                   className="w-10 h-10 bg-dark-700 rounded-full flex items-center justify-center text-gray-400 hover:bg-neon-blue hover:text-white transition-all duration-300"
                 >
@@ -119,22 +144,23 @@ const Footer = () => {
               ))}
             </div>
 
+            {/* Legal Links */}
             <div className="flex gap-6 text-sm text-gray-400">
-              <a href="/privacy" className="hover:text-neon-blue transition-colors">
+              <a href="#" className="hover:text-neon-blue transition-colors">
                 Privacy Policy
               </a>
-              <a href="/terms" className="hover:text-neon-blue transition-colors">
+              <a href="#" className="hover:text-neon-blue transition-colors">
                 Terms
               </a>
-              <a href="/cookies" className="hover:text-neon-blue transition-colors">
+              <a href="#" className="hover:text-neon-blue transition-colors">
                 Cookies
               </a>
             </div>
-
           </div>
         </div>
       </div>
 
+      {/* Scroll to Top Button (Optional) */}
       <button
         onClick={() => window.scrollTo({ top: 0, behavior: 'smooth' })}
         className="fixed bottom-8 right-8 w-12 h-12 bg-gradient-primary rounded-full flex items-center justify-center shadow-neon hover:shadow-neon-hover transition-all duration-300 z-40"
