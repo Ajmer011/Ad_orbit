@@ -268,8 +268,8 @@ const Contact = () => {
                 <div>
                   <p className="text-gray-400 text-sm mb-1">Address</p>
                   <p className="text-gray-300">
-                    123 Marketing Street<br />
-                    New York, NY 10001
+                    Ashoka Garden<br />
+                    Bhopal, Madhya Pradesh
                   </p>
                 </div>
               </div>
