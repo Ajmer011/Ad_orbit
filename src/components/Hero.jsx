@@ -1,6 +1,7 @@
 // components/Hero.jsx - Enhanced Hero Section Component
 import React, { useEffect, useRef } from "react";
-import { ArrowRight, Sparkles, TrendingUp, Zap } from "lucide-react";
+import { ArrowRight, Zap } from "lucide-react";
+
 
 const Hero = () => {
   const heroRef = useRef(null);
